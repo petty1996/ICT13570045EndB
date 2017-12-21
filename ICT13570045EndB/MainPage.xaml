@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ICT13570045EndB.MainPage"
+    Title="13570045">
+
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem
+            Text="New"
+            x:Name="newButton"/>
+
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+    
+    <ListView
+        x:Name="productListView"
+        RowHeight="300">
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+
+                    <ViewCell.ContextActions>
+
+                        <MenuItem
+                            Text="Edit"
+                            CommandParameter="{Binding .}"
+                            Clicked="Edit_Clicked"/>
+
+                        <MenuItem
+                            Text="Delete"
+                            CommandParameter="{Binding .}"
+                            IsDestructive="True"
+                            Clicked="Delete_Clicked"/>
+
+                    </ViewCell.ContextActions>
+
+                        <StackLayout>
+
+                            <Label
+                                Text="{Binding Type}"
+                                FontAttributes="Bold"
+                                TextColor="Navy"/>
+
+                            <Label 
+                                Text="{Binding Brand, StringFormat='ยี่ห้อ {0}'}" />
+
+                            <Label 
+                                Text="{Binding Generation, StringFormat='รุ่น {0}'}" />
+
+                            <Label 
+                                Text="{Binding Year, StringFormat='ปี {0}'}" />
+
+                            <Label 
+                                Text="{Binding Mile, StringFormat='เลขไมล์ {0}'}" />
+
+                            <Label 
+                                Text="{Binding Colour, StringFormat='สี {0}'}" />
+
+                            <Label 
+                                Text="{Binding Dealer, StringFormat='รถดีเลอร์? {0}'}" />
+
+                            <Label 
+                                Text="{Binding Detail, StringFormat='รายละเอียด {0}'}" 
+                                LineBreakMode="TailTruncation"/>
+
+                            <Label 
+                                Text="{Binding Price, StringFormat='ราคา {0}' บาท}" />
+
+                            <Label 
+                                Text="{Binding Province, StringFormat='จังหวัด {0}'}" />
+
+                            <Label 
+                                Text="{Binding Phone, StringFormat='เบอร์โทร {0}'}" />
+
+                        </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </ScrollView>
+</ContentPage>

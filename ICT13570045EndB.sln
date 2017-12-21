@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICT13570045EndB", "ICT13570045EndB\ICT13570045EndB.csproj", "{BFCEFDD6-C1EA-4E39-B0F9-D6A4C9328B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICT13570045EndB.Droid", "Droid\ICT13570045EndB.Droid.csproj", "{504CFEDE-1443-43AB-82FB-C46DE401FCAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFCEFDD6-C1EA-4E39-B0F9-D6A4C9328B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFCEFDD6-C1EA-4E39-B0F9-D6A4C9328B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFCEFDD6-C1EA-4E39-B0F9-D6A4C9328B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFCEFDD6-C1EA-4E39-B0F9-D6A4C9328B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{504CFEDE-1443-43AB-82FB-C46DE401FCAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{504CFEDE-1443-43AB-82FB-C46DE401FCAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{504CFEDE-1443-43AB-82FB-C46DE401FCAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{504CFEDE-1443-43AB-82FB-C46DE401FCAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
